@@ -13,10 +13,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var mealNameTextField: UITextField!
     @IBOutlet weak var defaultLabelTextButton: UIButton!
+    @IBOutlet weak var userEnteredMealLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mealNameTextField.delegate = self
     }
 
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
@@ -33,7 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        mealNameLabel.text = textField.text
+//        mealNameLabel.text = textField.text
+        userEnteredMealLabel.text = textField.text
         textField.text = ""
     }
 }
