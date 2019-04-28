@@ -22,11 +22,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        if (mealNameLabel.text == "Meal Name: ") {
-            mealNameLabel.text = "Default Text"
-        } else {
-            mealNameLabel.text = "Meal Name: "
-        }
+//        if (mealNameLabel.text == "Meal Name: ") {
+//            mealNameLabel.text = "Default Text"
+//        } else {
+//            mealNameLabel.text = "Meal Name: "
+//        }
+        userEnteredMealLabel.text = ""
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -35,7 +36,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-//        mealNameLabel.text = textField.text
         userEnteredMealLabel.text = textField.text
         textField.text = ""
     }

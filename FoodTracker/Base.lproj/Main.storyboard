@@ -42,9 +42,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYE-W6-GD2">
-                                                <rect key="frame" x="0.0" y="148.33333333333334" width="151" height="30"/>
-                                                <state key="normal" title="Set Default Label Text"/>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYE-W6-GD2">
+                                                <rect key="frame" x="0.0" y="148.33333333333334" width="117" height="30"/>
+                                                <state key="normal" title="Clear Meal Name"/>
                                                 <connections>
                                                     <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQ4-Rp-hWf"/>
                                                 </connections>
